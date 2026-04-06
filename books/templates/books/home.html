@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="p-5 mb-4 bg-white rounded-3 shadow-sm text-center">
+    <h1>Welcome to Book Tracker</h1>
+    <p>The simplest way to manage your reading library.</p>
+    
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#infoModal">
+      How it Works
+    </button>
+</div>
+
+<div class="modal fade" id="infoModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Getting Started</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        Simply register for an account, and you can start adding books to your personal dashboard!
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
